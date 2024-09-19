@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Алексей\\Desktop\\Универ\\Проектный практикум\\4 ctv\\1\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\Алексей\\Desktop\\Универ\\Проектный практикум\\4 ctv\\1 lb\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Алексей\\Desktop\\Универ\\Проектный практикум\\4 ctv\\1\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\Алексей\\Desktop\\Универ\\Проектный практикум\\4 ctv\\1 lb\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Алексей\\Desktop\\Универ\\Проектный практикум\\4 ctv\\1\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\Алексей\\Desktop\\Универ\\Проектный практикум\\4 ctv\\1 lb\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "C:\\Users\\Алексей\\Desktop\\Универ\\Проектный практикум\\4 ctv\\1\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "C:\\Users\\Алексей\\Desktop\\Универ\\Проектный практикум\\4 ctv\\1 lb\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\Алексей\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Алексей\\Desktop\\Универ\\Проектный практикум\\4 ctv\\1\\WebApplication1\\WebApplication1\\obj\\",
+        "outputPath": "C:\\Users\\Алексей\\Desktop\\Универ\\Проектный практикум\\4 ctv\\1 lb\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Алексей\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,6 +49,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.18, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.12, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
