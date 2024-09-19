@@ -32,7 +32,7 @@ namespace WebApplication1.Controllers
             .ToArray();
         }
         [HttpPost(Name = "AddNewSummery")]
-
+        
         public string[] AddNewSummery(string newSummery)
         {
             _logger.LogError("New method was called");
