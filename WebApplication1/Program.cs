@@ -1,11 +1,11 @@
 using WebApplication1.Database;
-//using WebApplication1.Middlewares;
+using WebApplication1.ServiceExtensions;
+using WebApplication1.Middlewares;
 using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
-using System.Reflection.PortableExecutable;
-using WebApplication1.ServiceExtensions;
-using Microsoft.AspNetCore.Diagnostics;
+
+//using Microsoft.AspNetCore.Diagnostics;
 //using static WebApplication1.ServiceExtensions.ServiceExtensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -38,7 +38,7 @@ try
         app.UseSwaggerUI();
     }
 
-    
+    app.UseMiddleware<ExceptionHandlerMiddleware>();
 
     app.UseAuthorization();
 
