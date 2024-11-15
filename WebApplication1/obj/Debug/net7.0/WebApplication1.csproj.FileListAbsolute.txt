@@ -78,3 +78,8 @@ C:\Users\Алексей\Desktop\Универ\Проектный практику
 C:\Users\Алексей\Desktop\Универ\Проектный практикум\4 ctv\1 lb\WebApplication1\obj\Debug\net7.0\WebApplication1.pdb
 C:\Users\Алексей\Desktop\Универ\Проектный практикум\4 ctv\1 lb\WebApplication1\obj\Debug\net7.0\WebApplication1.genruntimeconfig.cache
 C:\Users\Алексей\Desktop\Универ\Проектный практикум\4 ctv\1 lb\WebApplication1\obj\Debug\net7.0\ref\WebApplication1.dll
+C:\Users\Алексей\Desktop\Универ\Проектный практикум\4 ctv\1 lb\WebApplication1\bin\Debug\net7.0\WebApplication1.staticwebassets.endpoints.json
+C:\Users\Алексей\Desktop\Универ\Проектный практикум\4 ctv\1 lb\WebApplication1\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Алексей\Desktop\Универ\Проектный практикум\4 ctv\1 lb\WebApplication1\obj\Debug\net7.0\staticwebassets.build.endpoints.json
+C:\Users\Алексей\Desktop\Универ\Проектный практикум\4 ctv\1 lb\WebApplication1\obj\Debug\net7.0\staticwebassets\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Алексей\Desktop\Универ\Проектный практикум\4 ctv\1 lb\WebApplication1\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt

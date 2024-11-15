@@ -1,6 +1,119 @@
 [
   {
     "ContainingType": "WebApplication1.Controllers.StudentsController",
+    "Method": "CreateGroup",
+    "RelativePath": "Students/AddGroup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group",
+        "Type": "WebApplication1.Models.Group",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "AddGroup"
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.StudentsController",
+    "Method": "CreateStudent",
+    "RelativePath": "Students/AddStudent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "student",
+        "Type": "WebApplication1.Models.Student",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "AddStudent"
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.StudentsController",
+    "Method": "DeleteGroup",
+    "RelativePath": "Students/DeleteGroup",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "updatedGroup",
+        "Type": "WebApplication1.Models.Group",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.StudentsController",
+    "Method": "UpdateGroup",
+    "RelativePath": "Students/EditGroup",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "updatedGroup",
+        "Type": "WebApplication1.Filters.StudentFilters.StudentGroupFilter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.StudentsController",
+    "Method": "UpdateStudent",
+    "RelativePath": "Students/EditStudent",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "firstname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "updatedStudent",
+        "Type": "WebApplication1.Models.Student",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.StudentsController",
+    "Method": "GetStudentsByFioAsync",
+    "RelativePath": "Students/GetStudentsByFio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "WebApplication1.Filters.StudentFilters.StudentFioFilter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.StudentsController",
     "Method": "GetStudentsByGroupAsync",
     "RelativePath": "Students/GetStudentsByGroup",
     "HttpMethod": "POST",
@@ -10,6 +123,22 @@
       {
         "Name": "filter",
         "Type": "WebApplication1.Filters.StudentFilters.StudentGroupFilter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.StudentsController",
+    "Method": "GetStudentsByIdGroupAsync",
+    "RelativePath": "Students/GetStudentsByIdGroup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "WebApplication1.Filters.StudentFilters.StudentIdGroup",
         "IsRequired": true
       }
     ],

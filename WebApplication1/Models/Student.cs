@@ -1,4 +1,6 @@
-﻿namespace WebApplication1.Models
+﻿using System.Text.Json.Serialization;
+
+namespace WebApplication1.Models
 {
     public class Student
     {
@@ -7,6 +9,16 @@
         public string LastName { get; set; }
         public string MiddleName { get; set; }
         public int GroupId { get; set; }
+
+        [JsonIgnore]
         public Group Group { get; set; }
+
+        public string FIO
+        {
+            get
+            {
+                return FirstName + " " + LastName + " " + MiddleName;
+            }
+        }
     }
 }
