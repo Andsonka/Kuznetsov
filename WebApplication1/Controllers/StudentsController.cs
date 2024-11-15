@@ -18,6 +18,7 @@ namespace WebApplication1.Controllers
     {
         private readonly ILogger<StudentsController> _logger;
         private readonly IStudentService _studentService;
+        private readonly IStudentService _courseService;
         private StudentDbContext _context;
 
         public StudentsController(ILogger<StudentsController> logger, IStudentService studentService, StudentDbContext context)
@@ -35,7 +36,8 @@ namespace WebApplication1.Controllers
             return Ok(students);
         }
 
-        [HttpPost("GetStudentsByGroup")]
+
+        [HttpPost(Name = "GetStudentsByGroup")]
         public async Task<IActionResult> GetStudentsByGroupAsync(StudentGroupFilter filter, CancellationToken cancellationToken = default)
         {
             var students = await _studentService.GetStudentsByGroupAsync(filter, cancellationToken);
@@ -49,6 +51,7 @@ namespace WebApplication1.Controllers
             var students = await _studentService.GetStudentsByFioAsync(filter, cancellationToken);
 
             return Ok(students);
+
         }
 
         [HttpPost("AddStudent", Name = "AddStudent")]
@@ -84,7 +87,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost("AddGroup", Name = "AddGroup")]
-        public IActionResult CreateGroup([FromBody] WebApplication1.Models.Group group)
+        public IActionResult CreateGroup([FromBody] Models.Group group)
         {
             if (!ModelState.IsValid)
             {
@@ -113,7 +116,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpDelete("DeleteGroup")]
-        public IActionResult DeleteGroup(string groupName, WebApplication1.Models.Group updatedGroup)
+        public IActionResult DeleteGroup(string groupName, Models.Group updatedGroup)
         {
             var existingGroup = _context.Groups.FirstOrDefault(g => g.GroupName == groupName);
 

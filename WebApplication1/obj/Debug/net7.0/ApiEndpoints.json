@@ -1,6 +1,23 @@
 [
   {
     "ContainingType": "WebApplication1.Controllers.StudentsController",
+    "Method": "GetStudentsByGroupAsync",
+    "RelativePath": "Students",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "WebApplication1.Filters.StudentFilters.StudentGroupFilter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "GetStudentsByGroup"
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.StudentsController",
     "Method": "CreateGroup",
     "RelativePath": "Students/AddGroup",
     "HttpMethod": "POST",
@@ -107,22 +124,6 @@
       {
         "Name": "filter",
         "Type": "WebApplication1.Filters.StudentFilters.StudentFioFilter",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApplication1.Controllers.StudentsController",
-    "Method": "GetStudentsByGroupAsync",
-    "RelativePath": "Students/GetStudentsByGroup",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "filter",
-        "Type": "WebApplication1.Filters.StudentFilters.StudentGroupFilter",
         "IsRequired": true
       }
     ],

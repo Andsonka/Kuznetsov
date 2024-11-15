@@ -1,12 +1,13 @@
 ﻿using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
+using WebApplication1.Models;
 
 namespace WebApplication1.Models
 {
     public class Group
     {
         public int GroupId { get; set; }
-        public string GroupName { get; set; }
+        public string? GroupName { get; set; }
 
         [JsonIgnore]
         public List<Student>? Students { get; set; }

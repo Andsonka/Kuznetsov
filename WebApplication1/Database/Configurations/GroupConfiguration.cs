@@ -1,7 +1,7 @@
-﻿using WebApplication1.Database.Helpers;
-using WebApplication1.Models;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using WebApplication1.Database.Helpers;
+using WebApplication1.Models;
 
 namespace WebApplication1.Database.Configurations
 {
@@ -34,6 +34,5 @@ namespace WebApplication1.Database.Configurations
 
             builder.ToTable(TableName);
         }
-        
     }
 }

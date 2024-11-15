@@ -1,7 +1,6 @@
-﻿//using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using WebApplication1.Database.Configurations;
 using WebApplication1.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace WebApplication1.Database
 {
@@ -19,7 +18,6 @@ namespace WebApplication1.Database
             modelBuilder.ApplyConfiguration(new GroupConfiguration());
             modelBuilder.ApplyConfiguration(new CourseConfiguration());
         }
-
         public StudentDbContext(DbContextOptions<StudentDbContext> options) : base(options)
         {
         }
